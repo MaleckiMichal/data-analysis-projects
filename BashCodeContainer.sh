@@ -45,3 +45,18 @@ git commit -m"Creatin repository and adding gitignore file"
 git log
 
 
+
+# Remote repository
+git remote add origin https://github.com/....
+git branch -M main
+git push -u origin main    # if newly created Github repo is empty
+
+# If previously created files are in Github repo - merge needed
+git pull origin main --allow-unrelated-histories
+# vim editor should open. Do:
+#   Press 'i' to insert text
+#   Write a commit name
+#   Press 'Esc'
+#   Write ':wq' ("write" i "quit")
+# Push command is now possible
+git push -u origin main
