@@ -60,3 +60,10 @@ git pull origin main --allow-unrelated-histories
 #   Write ':wq' ("write" i "quit")
 # Push command is now possible
 git push -u origin main
+
+
+# To keep LF (Line Feed, \n) in repo
+git config --global core.autocrlf input
+
+# Looking for commits where [001] was used in commit name (here it is project prefix)
+git log --grep="\[001\]"
