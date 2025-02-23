@@ -67,3 +67,9 @@ git config --global core.autocrlf input
 
 # Looking for commits where [001] was used in commit name (here it is project prefix)
 git log --grep="\[001\]"
+
+
+# Change last commit name (here added "[001]" to name)
+git commit --amend -m "[001] SQL querries - extracting data"
+# push force needed to push changes to GitHub
+git push --force
